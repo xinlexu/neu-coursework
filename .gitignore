@@ -1,4 +1,6 @@
 .DS_Store
+.idea/
+__MACOSX/
 .env
 .env.*
 !.env.example
@@ -13,6 +15,9 @@ build/
 coverage/
 .cache/
 logs/
+qdrant_storage/
+models/
+results/
 *.pyc
 *.pyo
 *.class
@@ -27,4 +32,11 @@ logs/
 *.mov
 *.pcap
 *.pcapng
+*.pkl
+*.pth
+*.joblib
+*.onnx
+*.sqlite
+*.sqlite3
+*.db
 db.sqlite3

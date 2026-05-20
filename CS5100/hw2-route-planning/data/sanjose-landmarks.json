@@ -1,0 +1,15 @@
+
+[
+  {"landmark": "northeastern_building", "geo": "37.337504,-121.890144"},
+  {"landmark": "starbucks", "geo": "37.338223,-121.886577"},
+  {"landmark": "philz", "geo": "37.333737, -121.884490"},
+  {"landmark": "san_pedro_market", "amenity": "food", "geo": "37.336735, -121.894149"},
+  {"landmark": "bus_station","geo": "37.33603785821357, -121.89049954245998"},
+  {"landmark": "olla_cocina", "amenity": "food", "geo": "37.335204, -121.893015"},
+  {"landmark": "dac_phunk", "amenity": "food", "geo": "37.334605, -121.893742"},
+  {"landmark": "san_jose_state",  "geo": "37.334642, -121.881883"},
+  {"landmark": "grocery_outlet", "geo": "37.338771, -121.884070"},
+  {"landmark": "city_hall", "geo": "37.338382, -121.885815"},
+  {"landmark": "seven_eleven", "geo": "37.335640, -121.887390"},
+  {"landmark": "cathedral_basilica",  "geo": "37.333981, -121.890693"}
+]
