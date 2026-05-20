@@ -14,7 +14,6 @@ Curated Northeastern University computer science coursework and projects.
   - `hw4/` - cleaned notebook submission.
   - `hw5-clustering/` - cleaned clustering notebook submission.
   - `hw6-ui-prediction/` - UI-event prediction source with small public/support data; trained models and large logs are omitted.
-  - `smart-study-assistant/` - link to the standalone AI-based Smart Study Assistant repository.
   - `workshop-qa-tool/` - educational QA demo with citation and guardrail logic.
 - `CS5200/` - Database
   - `lab2-er-model/` - database modeling artifacts.
@@ -25,7 +24,7 @@ Curated Northeastern University computer science coursework and projects.
   - Weekly web development assignments.
   - `project1-personal-homepage/`
   - `project2-auto-mpg/`
-  - `final-project-rag-chat/` - includes a small sample `rag.jsonl`; local vector DB/cache artifacts are omitted.
+  - `final-project-rag-chat/` - CS5610 Smart Study Assistant / RAG chat app; includes a small sample `rag.jsonl`; local vector DB/cache artifacts are omitted.
 - `CS5700/` - Computer Network
   - `assignment5-socket-programming/`
   - `assignment6-proxy-server/`

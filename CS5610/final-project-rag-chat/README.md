@@ -1,8 +1,8 @@
-# CS5610 Final Project - RAG Chat Application
+# CS5610 Final Project - Smart Study Assistant
 
-Team web development project archived for CS5610.
+Team web development project archived locally for CS5610.
 
-This project is a a full-stack Retrieval-Augmented Generation (RAG) chat application that combines document retrieval with AI-powered responses. Users can upload documents and receive AI responses grounded in their uploaded content with citation support.The project allows user to switch between two interaction modes:
+This project is a full-stack Retrieval-Augmented Generation (RAG) chat application that combines document retrieval with AI-powered responses. Users can upload documents and receive AI responses grounded in their uploaded content with citation support. The project allows users to switch between two interaction modes:
 * **Normal mode**: Application runs in normal chat mode, LLM works as a simple chatbot.
 * **Professional mode**: Application runs in professional mode, LLM works as a RAG chatbot.
 ---
