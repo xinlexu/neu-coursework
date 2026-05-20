@@ -1,0 +1,6 @@
+streamlit
+scikit-learn
+numpy
+regex
+openai>=1.0.0
+python-dotenv

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="author" content="Student" />
+  <meta name="description" content="About Student — background and interests." />
+  <title>About — Student</title>
+  <link rel="icon" href="/assets/icons/neu_icon.png" type="image/png" />
+  <link rel="stylesheet" href="/styles/main.css" />
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav container" aria-label="Primary">
+      <a class="brand" href="/">Student's Home Page</a>
+      <ul class="nav-list">
+        <li><a aria-current="page" href="/about.html">About</a></li>
+        <li><a href="/gallery.html">Gallery</a></li>
+        <li><a href="/links.html">CS5610 Links</a></li>
+        <li><a href="/guestbook.html">Guestbook</a></li>
+        <li><button id="theme" class="theme-toggle" type="button" aria-label="Toggle color theme">Theme</button></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section>
+      <h1 class="h1">About Me</h1>
+      <p>
+        I’m Student, currently pursuing a Master’s in Computer Science at Northeastern University.
+        I graduated from the University of California, Davis with a B.S. in Computer Science and Economics.
+      </p>
+      <p>
+        I’m passionate about product design, innovation, and creating things that make life easier for people.
+        I’ve also been working on my own VPN startup, focusing on user experience, security, and accessibility across platforms.
+      </p>
+      <p>
+        Outside of academics, I enjoy exploring new places, outdoor activities, photography, and gaming with friends.
+      </p>
+      <figure class="hero-figure" style="margin-top:16px">
+        <img src="/assets/images/me_graduation.jpg" alt="Student at UC Davis graduation" class="hero-img hero-img--contain" />
+        <figcaption style="text-align:center;color:var(--muted);margin-top:8px;">2024 UC Davis Graduation</figcaption>
+      </figure>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <small>© <span id="year"></span> Student</small>
+    </div>
+  </footer>
+
+  <script defer src="/scripts/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,87 @@
+======================================================================
+A3: Multiple Transactions with default isolation
+======================================================================
+A3 Step 3 - Tx2 SELECT before Tx1 COMMIT:
+    ('A', 200)
+    ('B', 900)
+
+A3 Step 5 - Tx2 SELECT after Tx1 COMMIT but before Tx2 COMMIT:
+    ('A', 200)
+    ('B', 900)
+
+A3 Step 7 - Tx2 SELECT after Tx2 COMMIT:
+    ('A', 100)
+    ('B', 900)
+
+======================================================================
+B1: READ UNCOMMITTED
+======================================================================
+B1 Step 3 - Tx1 initial SELECT:
+    ('A', 100)
+    ('B', 1000)
+
+B1 Step 5 - Tx1 SELECT after UPDATE, before ROLLBACK:
+    ('A', 200)
+    ('B', 1000)
+
+B1 Step 6 - Tx2 SELECT under READ UNCOMMITTED:
+    ('A', 200)
+    ('B', 1000)
+
+B1 Step 8 - Tx1 SELECT after ROLLBACK:
+    ('A', 100)
+    ('B', 1000)
+
+B1 Step 9 - Tx2 SELECT after Tx1 ROLLBACK:
+    ('A', 100)
+    ('B', 1000)
+
+======================================================================
+B2: READ COMMITTED
+======================================================================
+B2 Step 3 - Tx1 initial SELECT:
+    ('A', 100)
+    ('B', 1000)
+
+B2 Step 5 - Tx1 SELECT after UPDATE, before COMMIT:
+    ('A', 200)
+    ('B', 1000)
+
+B2 Step 6 - Tx2 SELECT under READ COMMITTED before Tx1 COMMIT:
+    ('A', 100)
+    ('B', 1000)
+
+B2 Step 8 - Tx1 SELECT after COMMIT:
+    ('A', 200)
+    ('B', 1000)
+
+B2 Step 9 - Tx2 SELECT after Tx1 COMMIT:
+    ('A', 200)
+    ('B', 1000)
+
+======================================================================
+B3: REPEATABLE READ
+======================================================================
+B3 Step 3 - Tx2 SELECT ID WHERE BAL = 200 before insert:
+    EMPTY RESULT
+
+B3 Step 4 - Tx1 initial SELECT:
+    ('A', 100)
+    ('B', 1000)
+
+B3 Step 6 - Tx1 SELECT after INSERT, before COMMIT:
+    ('A', 100)
+    ('B', 1000)
+    ('C', 200)
+
+B3 Step 7 - Tx2 SELECT before Tx1 COMMIT:
+    EMPTY RESULT
+
+B3 Step 9 - Tx1 SELECT after COMMIT:
+    ('A', 100)
+    ('B', 1000)
+    ('C', 200)
+
+B3 Step 10 - Tx2 SELECT after Tx1 COMMIT, same Tx2 transaction:
+    EMPTY RESULT
+

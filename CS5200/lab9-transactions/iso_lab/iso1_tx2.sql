@@ -1,0 +1,5 @@
+USE sanjose;
+SET TRANSACTION ISOLATION LEVEL READ UNCOMMITTED;
+SELECT * FROM ACCT;
+-- After tx1 rolls back, run again:
+SELECT * FROM ACCT;

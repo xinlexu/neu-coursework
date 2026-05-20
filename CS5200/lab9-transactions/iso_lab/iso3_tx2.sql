@@ -1,0 +1,9 @@
+USE sanjose;
+SET AUTOCOMMIT = 0;
+SET TRANSACTION ISOLATION LEVEL REPEATABLE READ;
+SELECT ID FROM ACCT WHERE BAL = 200;
+-- After tx1 inserts C but before tx1 commits, run again:
+SELECT ID FROM ACCT WHERE BAL = 200;
+-- After tx1 commits, run a third time:
+SELECT ID FROM ACCT WHERE BAL = 200;
+COMMIT;

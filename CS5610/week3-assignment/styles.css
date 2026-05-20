@@ -1,0 +1,95 @@
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+    margin:0; color:#111;
+    font:16px/1.6 ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial;
+    background: #ffffff;
+  }
+  
+
+/* header */
+.topbar{
+  position:sticky; top:0; z-index:5;
+  display:grid; grid-template-columns:1fr auto; align-items:center;
+  padding:10px 16px; background:#fff; border-bottom:1px solid #ececec;
+}
+.brand{
+  font-weight:800; letter-spacing:.4px;
+  background: linear-gradient(90deg,#6ea8ff,#a484ff);
+  -webkit-background-clip:text; background-clip:text; color:transparent;
+}
+.nav a{
+  display:inline-block; padding:8px 12px; border-radius:999px;
+  text-decoration:none; color:#555; border:1px dashed transparent; background:#fff;
+}
+.nav a:hover{ color:#111; border-color:#ddd; background:#f7f7f7 }
+.nav a.disabled{ cursor:not-allowed }
+
+/* side bar*/
+.side{
+  position:fixed; left:0; top:56px; bottom:0; width:100px;
+  display:flex; flex-direction:column; align-items:center; justify-content:center; gap:10px;
+  border-right:1px solid #f0f0f0; user-select:none; z-index:1;
+}
+.side span{
+  padding:6px 10px; border-radius:12px; color:#6c7394; border:1px solid rgba(0,0,0,.06);
+  background:#fbfbff;
+}
+
+/* main */
+.wrap{
+  min-height:calc(100vh - 96px);
+  display:grid; place-items:center; align-content:start; gap:16px;
+  padding:24px 24px 40px 140px; text-align:center; position: relative; z-index:2;
+}
+.line{ margin:24px 0 0; font-size:clamp(22px, 4.6vw, 40px); font-weight:700 }
+.time{
+  display:inline-block; margin-left:6px; padding:2px 10px; border-radius:10px;
+  font-variant-numeric:tabular-nums;
+  font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
+  border:1px solid #ddd; background:#fafafa;
+}
+.btn{
+  padding:10px 14px; border:1px solid #cfcfcf; background:#f7f7f7; border-radius:12px; cursor:pointer;
+}
+.btn:hover{ background:#f0f0f0 }
+
+/* arrow,caption */
+.arrow{
+  font-size:28px; line-height:1; color:#8b93b2; margin-top:8px;
+  animation: bounce 1.4s ease-in-out infinite;
+}
+@keyframes bounce{
+  0%,100%{ transform: translateY(0) }
+  50%{ transform: translateY(6px) }
+}
+.caption{ margin:0; color:#666 }
+
+/* cat*/
+.cat{
+    margin:0;
+    width:100%;
+    max-width:400px;
+  }
+  .cat img{
+    display:block;
+    width:100%;
+    height:auto;
+    border-radius:12px;
+    border:1px solid #e6e6e6;
+    box-shadow:0 6px 18px rgba(0,0,0,.08);
+    cursor:pointer;
+  }
+  .cat img:hover{ filter: saturate(1.05) }
+  
+
+/* footer */
+.foot{
+  height:56px; display:grid; place-items:center; color:#666; font-size:14px; border-top:1px solid #f2f2f2;
+}
+
+/* for small screen */
+@media (max-width:700px){
+  .side{ width:88px }
+  .wrap{ padding-left:120px }
+}

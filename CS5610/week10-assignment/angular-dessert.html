@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en" ng-app="dessertApp">
+  <head>
+    <meta charset="utf-8">
+    <title>Angular Dessert Rating</title>
+    <link rel="stylesheet" href="style.css">
+  
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+  </head>
+  <body ng-controller="DessertController">
+    <div class="container">
+      <h1>Angular Dessert Rating</h1>
+      <p class="helper">
+        Type your favorite dessert and rate it from 1 to 5.
+      </p>
+
+      <label for="dessert">Dessert name</label>
+      <input
+        id="dessert"
+        type="text"
+        ng-model="dessert"
+        placeholder="e.g. Brownie"
+      >
+
+      <label for="rating">Rating (1–5)</label>
+      <input
+        id="rating"
+        type="number"
+        min="1"
+        max="5"
+        ng-model="rating"
+      >
+      <p class="helper">
+        Current rating:
+        <span class="rating-value">{{ rating || 0 }}</span>/5
+      </p>
+
+      <p class="message" ng-if="dessert">
+        You rated {{ dessert }} {{ rating || 0 }}/5.
+      </p>
+      <p class="message" ng-if="!dessert">
+        Pick a dessert to start rating.
+      </p>
+    </div>
+
+    <script>
+      angular
+        .module('dessertApp', [])
+        .controller('DessertController', ['$scope', function ($scope) {
+          $scope.dessert = '';
+          $scope.rating = 3;
+        }]);
+    </script>
+  </body>
+</html>

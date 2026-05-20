@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Vue Dessert Rating</title>
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+  </head>
+  <body>
+    <div id="app" class="container">
+      <h1>Vue Dessert Rating</h1>
+      <p class="helper">
+        Type your favorite dessert and rate it from 1 to 5.
+      </p>
+
+      <label for="dessert">Dessert name</label>
+      <input
+        id="dessert"
+        type="text"
+        v-model="dessert"
+        placeholder="e.g. Cheesecake"
+      >
+
+      <label for="rating">Rating (1–5)</label>
+      <input
+        id="rating"
+        type="range"
+        min="1"
+        max="5"
+        v-model.number="rating"
+      >
+      <p class="helper">
+        Current rating: <span class="rating-value">{{ rating }}</span>/5
+      </p>
+
+      <p class="message" v-if="dessert">
+        {{ message }}
+      </p>
+      <p class="message" v-else>
+        Pick a dessert to start rating.
+      </p>
+    </div>
+
+    <script>
+      new Vue({
+        el: '#app',
+        data: {
+          dessert: '',
+          rating: 3
+        },
+        computed: {
+          message() {
+            return 'You rated ' + this.dessert + ' ' + this.rating + '/5.';
+          }
+        }
+      });
+    </script>
+  </body>
+</html>

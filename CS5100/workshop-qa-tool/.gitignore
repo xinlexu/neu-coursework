@@ -1,0 +1,11 @@
+﻿# secrets
+.env
+.env.*.local
+# venv/cache/logs
+.venv/
+__pycache__/
+logs/
+*.log
+# OS/editor
+.DS_Store
+Thumbs.db

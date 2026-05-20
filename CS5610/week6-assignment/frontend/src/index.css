@@ -1,0 +1,35 @@
+:root {
+  --bg: #0b0f1a;
+  --panel: #10182b;
+  --panel-2: #0b1220;
+  --text: #e6edf3;
+  --muted: #a9b3c1;
+  --accent: #5da8ff;
+  --border: rgba(255,255,255,0.08);
+}
+* { box-sizing: border-box; }
+html, body, #root { height: 100%; }
+body { margin: 0; background: var(--bg); color: var(--text); font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial; }
+.app { display: grid; grid-template-rows: auto 1fr; min-height: 100vh; }
+nav { display: flex; gap: 16px; align-items: center; padding: 14px 20px; background: var(--panel); border-bottom: 1px solid var(--border); }
+nav a { color: var(--muted); text-decoration: none; padding: 6px 10px; border-radius: 10px; }
+nav a.active, nav a:hover { color: var(--text); background: rgba(93,168,255,0.12); }
+main { padding: 24px; max-width: 980px; margin: 0 auto; }
+section { background: var(--panel); border: 1px solid var(--border); border-radius: 16px; padding: 18px; margin-bottom: 18px; }
+h1, h2 { margin: 0 0 12px; }
+button { background: var(--accent); color: #051425; border: none; padding: 8px 14px; border-radius: 10px; cursor: pointer; }
+button:disabled { opacity: 0.6; cursor: not-allowed; }
+input, select, textarea {
+  width: 100%; padding: 8px 10px; border-radius: 8px;
+  border: 1px solid rgba(255,255,255,0.12);
+  background: var(--panel-2); color: var(--text);
+}
+select { appearance: none; }
+.badge { padding: 6px 10px; border-radius: 999px; background: var(--panel-2); border: 1px solid var(--border); font-size: 12px; }
+.header { display: flex; align-items: center; justify-content: space-between; }
+.toolbar { display: grid; gap: 10px; grid-template-columns: 1fr 160px 160px 1fr; }
+.card { display: grid; grid-template-columns: auto 1fr auto; align-items: center; gap: 12px; padding: 10px 12px; margin-bottom: 8px; border:1px solid var(--border); border-radius: 12px; background: var(--panel-2); }
+.helper { font-size: 12px; opacity: .75; margin-top: 6px; }
+.stat { min-width: 120px; padding: 12px 14px; border-radius: 12px; border: 1px solid var(--border); background: var(--panel-2); }
+.success { background: #12361f; border: 1px solid #216a3c; color: #bfe8cd; padding: 10px 12px; border-radius: 10px; }
+.error { color: #ff6b6b; }

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="author" content="Student" />
+  <meta name="description" content="Student — Personal homepage with a refined gallery and CS5610 links." />
+  <title>Student — Home</title>
+  <link rel="icon" href="/assets/icons/neu_icon.png" type="image/png" />
+  <link rel="stylesheet" href="/styles/main.css" />
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav container" aria-label="Primary">
+      <a class="brand" href="/">Student's Home Page</a>
+      <ul class="nav-list">
+        <li><a href="/about.html">About</a></li>
+        <li><a href="/gallery.html">Gallery</a></li>
+        <li><a href="/links.html">CS5610 Links</a></li>
+        <li><a href="/guestbook.html">Guestbook</a></li>
+        <li><button id="theme" class="theme-toggle" type="button" aria-label="Toggle color theme">Theme</button></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="hero" aria-labelledby="about-heading">
+      <div>
+        <h1 id="about-heading" class="h1">Hi, I’m Student.</h1>
+        <p class="lead">
+          I’m from China, 24 years old, studying in the United States since 2016. Nice to meet you!
+        </p>
+        <p class="muted">Contact me: <a class="email" href="mailto:student@example.com">student@example.com</a></p>
+      </div>
+      <figure class="hero-figure">
+        <img src="/assets/images/me.jpg" alt="" class="hero-img hero-img--contain" loading="eager" />
+      </figure>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <small>© <span id="year"></span> Student</small>
+    </div>
+  </footer>
+
+  <script defer src="/scripts/app.js"></script>
+</body>
+</html>

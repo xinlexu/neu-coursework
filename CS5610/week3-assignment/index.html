@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Time Waster</title>
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">Time Waster</div>
+    <nav class="nav">
+      <a href="#" class="disabled" aria-disabled="true">Nothing to do</a>
+    </nav>
+  </header>
+
+  <aside class="side" aria-hidden="true">
+    <span>This</span>
+    <span>is</span>
+    <span>useless</span>
+    <span>side</span>
+    <span>bar</span>
+  </aside>
+
+  <main class="wrap">
+    <h1 class="line">
+      You’ve wasted <span id="total" class="time">00:00:00</span> on this page
+    </h1>
+    <button id="reset" class="btn" title="clear total time for this browser">Reset</button>
+
+    <div class="arrow" aria-hidden="true">↓</div>
+    <p class="caption">This is my cat PewPew</p>
+
+    <figure class="cat">
+      <img id="catImg" alt="PewPew the cat" />
+    </figure>
+  </main>
+
+  <footer class="foot">made by Student</footer>
+
+  <script src="./app.js" defer></script>
+</body>
+</html>

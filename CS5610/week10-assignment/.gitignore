@@ -1,0 +1,64 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+__MACOSX/
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# ---- Node.js ----
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+package-lock.json
+.pnpm-debug.log*
+
+# ---- Python ----
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pyd
+*.pdb
+*.egg-info/
+.env
+.venv/
+venv/
+ENV/
+env.bak/
+
+# ---- Logs & coverage ----
+logs/
+*.log
+coverage/
+coverage-final.json
+.nyc_output/
+
+# ---- Build outputs ----
+dist/
+build/
+out/
+tmp/
+temp/
+
+# ---- Editors / IDEs ----
+# VSCode
+.vscode/
+.history/
+# JetBrains IDEs (IntelliJ, PyCharm, WebStorm)
+.idea/
+*.iml
+out/
+
+# ---- Misc ----
+# Ignore environment-specific or secret files
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local

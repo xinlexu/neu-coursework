@@ -1,0 +1,6 @@
+USE sanjose;
+SET AUTOCOMMIT = 0;
+UPDATE ACCT SET BAL = 100 WHERE ID = 'A';
+-- Switch to tx2 and run SELECT * FROM ACCT;
+COMMIT;
+SELECT * FROM ACCT;

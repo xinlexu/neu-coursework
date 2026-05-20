@@ -1,0 +1,50 @@
+html,body{margin:0;padding:0;font-family:Inter,system-ui,Arial,Helvetica,sans-serif;color:#0f1220;background:#fff;line-height:1.6}
+header,nav,main,footer{max-width:1080px;margin:0 auto;padding:0 20px}
+
+/* header */
+header{padding:28px 20px 14px;border-bottom:1px solid #e9ebf0}
+.title{
+  margin:0 0 6px 0;font-weight:800;letter-spacing:.2px;font-size:1.85rem;
+  background:linear-gradient(92deg,#0ea5e9 0%,#8b5cf6 55%,#ec4899 100%);
+  -webkit-background-clip:text;background-clip:text;color:transparent;
+  text-shadow:0 0 1px rgba(0,0,0,.08)
+}
+.tagline{margin:0;color:#5b6275}
+
+/* nav */
+.nav{display:flex;gap:18px;list-style:none;margin:0;padding:12px 0;border-bottom:1px solid #eef1f6}
+.nav a{color:#0ea5e9;text-decoration:none;padding:6px 0;border-bottom:2px solid transparent}
+.nav a:hover{border-color:#0ea5e9}
+
+/* layout */
+main{display:grid;grid-template-columns:1fr 300px;gap:28px;padding:18px 20px}
+.hero{width:100%;height:auto;display:block;border-radius:10px;border:1px solid #eef1f6;box-shadow:0 2px 16px rgba(15,18,32,.06);margin:6px 0 14px}
+
+article h2{margin:10px 0 6px 0;font-size:1.2rem}
+ul,ol,dl{margin:8px 0 14px 20px}
+ul ul{margin-top:6px}
+dl dt{font-weight:600;margin-top:6px}
+dl dd{margin:4px 0 10px 0;color:#30354a}
+
+/* links in aside */
+aside{border-left:1px solid #eef1f6;padding-left:20px}
+aside h3{margin:0 0 10px 0;font-size:1.05rem}
+.links{list-style:none;padding:0;margin:0;display:grid;grid-template-columns:1fr;gap:10px}
+.link-card{
+  display:block;padding:10px 12px;border:1px solid #e6e8ef;border-radius:10px;
+  text-decoration:none;color:#0f1220;background:#fafbff;transition:transform .12s ease,box-shadow .12s ease,border-color .12s ease
+}
+.link-card:hover{transform:translateY(-1px);box-shadow:0 6px 20px rgba(15,18,32,.07);border-color:#d8dcef}
+
+/* footer */
+footer{padding:16px 20px;color:#6b7280;border-top:1px solid #e9ebf0;text-align:center}
+
+/* responsive */
+@media (max-width: 900px){
+  main{grid-template-columns:1fr;gap:20px}
+  aside{border-left:none;border-top:1px solid #eef1f6;padding-left:0;padding-top:16px}
+}
+@media (max-width: 520px){
+  .title{font-size:1.55rem}
+  .nav{flex-wrap:wrap;gap:12px}
+}

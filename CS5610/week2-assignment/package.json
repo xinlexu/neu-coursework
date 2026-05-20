@@ -1,0 +1,12 @@
+{
+  "name": "week2-assignment-student",
+  "version": "1.0.0",
+  "description": "Hello World webpage using Node.js",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "author": "Student",
+  "license": "ISC",
+  "dependencies": {}
+}
