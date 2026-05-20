@@ -5,7 +5,7 @@ Curated Northeastern University computer science coursework and projects.
 ## Contents
 
 - `CS5010/` - Program Design Paradigms
-  - `midterm-java-oop/` - Java OOP midterm source and tests extracted from the local archive.
+  - Java OOP midterm source and tests extracted from the local archive.
 - `CS5100/` - Intro to AI
   - `final-project/` - machine learning notebooks and cleaned data from the former `CS5100-FinalProject` GitHub repository.
   - `hw1-recommender/` - recommendation-system notebook and public MovieLens 100K data.
@@ -14,7 +14,7 @@ Curated Northeastern University computer science coursework and projects.
   - `hw4/` - cleaned notebook submission.
   - `hw5-clustering/` - cleaned clustering notebook submission.
   - `hw6-ui-prediction/` - UI-event prediction source with small public/support data; trained models and large logs are omitted.
-  - `smart-study-assistant/` - AI-based RAG study assistant project.
+  - `smart-study-assistant/` - link to the standalone AI-based Smart Study Assistant repository.
   - `workshop-qa-tool/` - educational QA demo with citation and guardrail logic.
 - `CS5200/` - Database
   - `lab2-er-model/` - database modeling artifacts.
