@@ -4,22 +4,23 @@ Curated Northeastern University computer science coursework and projects.
 
 ## Contents
 
-- `CS5100/`
+- `CS5100/` - Intro to AI
   - `final-project/` - machine learning notebooks and cleaned data from the former `CS5100-FinalProject` GitHub repository.
   - `hw1-recommender/` - recommendation-system notebook and public MovieLens 100K data.
+  - `smart-study-assistant/` - AI-based RAG study assistant project.
   - `workshop-qa-tool/` - educational QA demo with citation and guardrail logic.
-- `CS5200/`
+- `CS5200/` - Database
   - `lab2-er-model/` - database modeling artifacts.
   - `lab9-transactions/` - SQL and Python transaction/isolation exercises.
-- `CS5610/`
+- `CS5610/` - Web Dev
   - Weekly web development assignments.
   - `project1-personal-homepage/`
   - `project2-auto-mpg/`
   - `final-project-rag-chat/`
-- `CS5700/`
+- `CS5700/` - Computer Network
   - `assignment5-socket-programming/`
   - `assignment6-proxy-server/`
-  - `reliable-file-transfer/`
+  - `reliable-file-transfer/` - group SRFT project, synchronized from `tszwinglitw/cs5700-group-05` with large test-result artifacts omitted.
 
 ## Curation Notes
 

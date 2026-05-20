@@ -1,7 +1,6 @@
 # CS5610 Final Project - RAG Chat Application
-> Team Members: 
-    * Student (student@example.com)
-    * Nahai Gu (gu.nah@northeastern.edu)
+
+Team web development project archived for CS5610.
 
 This project is a a full-stack Retrieval-Augmented Generation (RAG) chat application that combines document retrieval with AI-powered responses. Users can upload documents and receive AI responses grounded in their uploaded content with citation support.The project allows user to switch between two interaction modes:
 * **Normal mode**: Application runs in normal chat mode, LLM works as a simple chatbot.
@@ -112,8 +111,8 @@ This project is a a full-stack Retrieval-Augmented Generation (RAG) chat applica
     Add environment variables to `.env`
     ```dotenv
     PORT=5500
-    OPENAI_API_KEY=<your-api-key>
-    GEMINI_API_KEY=<your-api-key>
+    OPENAI_API_KEY=<openai-api-key>
+    GEMINI_API_KEY=<gemini-api-key>
     ```
 
 8. **Start the server**
@@ -125,11 +124,13 @@ This project is a a full-stack Retrieval-Augmented Generation (RAG) chat applica
 9. **Access the application**
     Open `http://localhost:5500` in browser
 
-### Demo Account
-- **Username**: `demo`
-- **Password**: `123456`
-- **Dummy document for upload: `./rag.jsonl`, `./pages.jsonl`**
-> NOTE: uploading `pages.jsonl` can take up to 1 min
+### Document Upload Sample
+
+The original local JSONL/PDF study materials are intentionally omitted from this public archive. To test RAG mode, upload a JSONL file with one document chunk per line:
+
+```jsonl
+{"title":"Sample Notes","author":"Course Staff","page":1,"content":"This is a short passage to retrieve from."}
+```
 ---
 
 ## Environment Variables
@@ -141,7 +142,7 @@ Create a `.env` file in the project root:
 HOST=0.0.0.0
 PORT=5500
 STATIC_DIR=./dist
-SESSION_SECRET=your-secure-session-secret
+SESSION_SECRET=<long-random-session-secret>
 
 # AI Provider Keys (at least one required)
 GEMINI_API_KEY=<gemini-api-key>
@@ -224,7 +225,7 @@ data: [DONE]
 The application uses Qdrant, a vector database optimized for similarity search. Qdrant collections can also store metadata for each vector, which is used to retrieve the original document content when generating citations. Each collection also support indexing for faster read operations.
 
 Alhough Qdrant is not a relational database, the application's database schema is based on the Entity-Relationship Diagram:
-> NOTE: `USERS` and `CHATS` stores dummy embedding vectors for consistency. This also allows for future integration with other features that might involve similarity search on user info or chat history.  
+> NOTE: `USERS` and `CHATS` stores dummy embedding vectors for consistency. This also allows for future integration with other features that might involve similarity search on user info or chat history.
 ```
 ┌─────────────────────────────────────────────────────────────────────────┐
 │                           QDRANT COLLECTIONS                            │
@@ -291,8 +292,8 @@ Alhough Qdrant is not a relational database, the application's database schema i
 
 ### Persona 1: Graduate Student (Research-Focused)
 
-**Name**: Demo 
-**Background**: MS student in Computer Science researching Machine Learning  
+**Name**: Demo
+**Background**: MS student in Computer Science researching Machine Learning
 **Goals**: Quickly find relevant information in local knowledge based derived from various sources, get cited answers
 
 **User Stories**:

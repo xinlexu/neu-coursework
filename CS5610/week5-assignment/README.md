@@ -1,6 +1,6 @@
 # student's VPN Management Console
 
-A demo site to manage VPN customers and their subscription orders.  
+A demo site to manage VPN customers and their subscription orders.
 
 ## Run locally
 
@@ -12,8 +12,8 @@ npm run db:reset
 npm run dev   # open http://localhost:3000
 ```
 
-On the home page, the left panel creates a customer (name, email, password).  
-The right panel creates an order for a given customer id with plan and months.  
+On the home page, the left panel creates a customer (name, email, password).
+The right panel creates an order for a given customer id with plan and months.
 The server computes `expires_at` from months and sets `price_cents` from per-month rates (cents): basic 599, standard 999, premium 1499.
 
 ## SQL (DDL)
@@ -48,7 +48,7 @@ CREATE INDEX idx_orders_customer_id ON orders(customer_id);
 INSERT INTO customers (name, email, password) VALUES
   ('Alice Chen', 'alice@example.com', 'alice123'),
   ('Bob Lee',    'bob@example.com',   'bob123'),
-  ('Student',   'student@example.com',  'xlxu123');
+  ('Student',   'student@example.com',  'student123');
 
 INSERT INTO orders (customer_id, plan, expires_at, price_cents) VALUES
   (1, 'basic',    NOW() + INTERVAL '30 days',   599),

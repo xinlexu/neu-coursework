@@ -16,9 +16,9 @@ CREATE TABLE IF NOT EXISTS guestbook (
 );
 
 INSERT INTO links (title, url, category) VALUES
-  ('Week 2 – Assignment', 'https://github.khoury.northeastern.edu/cs5610-fall2025/week2-assignment', 'CS5610'),
-  ('Week 3 – Assignment', 'https://github.khoury.northeastern.edu/cs5610-fall2025/week3-assignment', 'CS5610'),
-  ('Week 4 – Assignment', 'https://github.khoury.northeastern.edu/cs5610-fall2025/week4-assignment', 'CS5610'),
-  ('Week 5 – Assignment', 'https://github.khoury.northeastern.edu/cs5610-fall2025/week5-assignment', 'CS5610'),
-  ('Project 1', 'https://github.khoury.northeastern.edu/cs5610-fall2025/project1-personal-homepage', 'CS5610')
+  ('Week 2 – Assignment', 'https://example.com/cs5610/week2-assignment', 'CS5610'),
+  ('Week 3 – Assignment', 'https://example.com/cs5610/week3-assignment', 'CS5610'),
+  ('Week 4 – Assignment', 'https://example.com/cs5610/week4-assignment', 'CS5610'),
+  ('Week 5 – Assignment', 'https://example.com/cs5610/week5-assignment', 'CS5610'),
+  ('Project 1', 'https://example.com/cs5610/project1-personal-homepage', 'CS5610')
 ON CONFLICT DO NOTHING;

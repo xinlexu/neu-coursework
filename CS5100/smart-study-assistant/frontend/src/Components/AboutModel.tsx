@@ -24,30 +24,17 @@ export function AboutModal({ isOpen, onClose }: { isOpen: boolean, onClose: () =
             <Sparkles size={32} />
           </div>
           <h2 className="text-xl font-bold text-white">Smart Study Assistant</h2>
-          <p className="text-sm text-neutral-500 mt-1">CS5610 Final Project</p>
+          <p className="text-sm text-neutral-500 mt-1">CS5100 Project</p>
         </div>
 
         <div className="space-y-4">
           <div className="bg-neutral-900/50 rounded-xl p-4 border border-neutral-800/50">
-            <h3 className="text-xs font-semibold text-neutral-400 uppercase tracking-wider mb-3">Authors</h3>
-            <div className="space-y-3">
-              <div className="flex items-start gap-3">
-                <div className="w-8 h-8 bg-neutral-800 rounded-full flex items-center justify-center text-neutral-400 shrink-0 text-xs font-medium">XX</div>
-                <div>
-                  <div className="text-sm font-medium text-neutral-200">Student</div>
-                </div>
-              </div>
-              <div className="flex items-start gap-3">
-                <div className="w-8 h-8 bg-neutral-800 rounded-full flex items-center justify-center text-neutral-400 shrink-0 text-xs font-medium">NG</div>
-                <div>
-                  <div className="text-sm font-medium text-neutral-200">Student</div>
-                </div>
-              </div>
-            </div>
+            <h3 className="text-xs font-semibold text-neutral-400 uppercase tracking-wider mb-3">Course</h3>
+            <div className="text-sm font-medium text-neutral-200">CS5100 - Intro to AI</div>
           </div>
 
           <a
-            href="https://github.com/xinlexu/neu-coursework/tree/main/CS5610/final-project-rag-chat"
+            href="https://github.com/xinlexu/neu-coursework/tree/main/CS5100/smart-study-assistant"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center justify-center gap-2 w-full py-3 bg-neutral-800 hover:bg-neutral-700 text-white rounded-xl transition-all border border-neutral-700 font-medium text-sm"

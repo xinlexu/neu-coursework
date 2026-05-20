@@ -5,7 +5,7 @@ CFG = {
     "port": 3306,
     "database": "sanjose",
     "user": "lab9user",
-    "password": "Lab9Pass_123!",
+    "password": "PASS",
 }
 
 
